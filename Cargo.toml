@@ -1,0 +1,25 @@
+[package]
+name = "fluid-studio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.31", features = ["glow"] }
+glam = "0.29"
+rayon = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.15"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "bmp", "webp", "gif"] }
+bytemuck = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3

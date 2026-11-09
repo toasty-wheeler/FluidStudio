@@ -1,0 +1,8 @@
+/target
+# local portable program folder (exe, bundled ffmpeg, personal settings/images/exports)
+/FluidStudio
+settings.json
+Images/
+Projects/
+Exports/
+*.json.tmp
