@@ -4,6 +4,10 @@ A desktop fluid simulation studio written in Rust. Place emission points in a 3D
 
 ![FluidStudio default interface](docs/screenshot.png)
 
+## Download
+
+Get the latest `FluidStudio-…-win64.zip` from the [Releases page](https://github.com/toasty-wheeler/FluidStudio/releases/latest). Unzip it anywhere and run `FluidStudio.exe`. There's no installer, and ffmpeg is included for video export.
+
 ## Features
 
 - **3D scene editing:** click the floor to place emission points, drag them to move them, and drag the arrow tip to aim.
@@ -26,7 +30,7 @@ The program is `target/release/fluid-studio.exe`.
 
 ## Video export
 
-Video formats need [ffmpeg](https://ffmpeg.org/). Put `ffmpeg.exe` next to the program, or make sure it is on your `PATH`. You can also pick its location in the export window. PNG sequence export works without ffmpeg.
+Video formats need [ffmpeg](https://ffmpeg.org/). The release zip already includes it: an unmodified GPL build from [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds), with its license and source details in the `licenses` folder. When building from source, put `ffmpeg.exe` next to the program, or make sure it is on your `PATH`. You can also pick its location in the export window. PNG sequence export works without ffmpeg.
 
 ## Controls
 
