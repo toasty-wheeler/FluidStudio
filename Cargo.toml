@@ -2,6 +2,9 @@
 name = "fluid-studio"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Desktop fluid simulation studio: place emitters in 3D, time them on a timeline, export liquid animations as video"
+repository = "https://github.com/toasty-wheeler/FluidStudio"
 
 [dependencies]
 eframe = { version = "0.31", features = ["glow"] }

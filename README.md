@@ -30,7 +30,7 @@ The program is `target/release/fluid-studio.exe`.
 
 ## Video export
 
-Video formats need [ffmpeg](https://ffmpeg.org/). The release zip already includes it: an unmodified GPL build from [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds), with its license and source details in the `licenses` folder. When building from source, put `ffmpeg.exe` next to the program, or make sure it is on your `PATH`. You can also pick its location in the export window. PNG sequence export works without ffmpeg.
+[ffmpeg](https://ffmpeg.org/) is included in the release zip, so video export works out of the box. It's an unmodified GPL build from [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds); its license and source details are in the `licenses` folder.
 
 ## Controls
 
@@ -45,3 +45,7 @@ Video formats need [ffmpeg](https://ffmpeg.org/). The release zip already includ
 | Duplicate selected point | Ctrl + D |
 | Save project | Ctrl + S |
 | Free (unsnapped) timeline drag | Hold Shift |
+
+## License
+
+FluidStudio is released under the [MIT License](LICENSE). The bundled ffmpeg has its own license (GPLv3); see the `licenses` folder in the release.
